@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Profile</title>
+        <style>
+            *{
+                font-family: "Comic", cursive;
+                font-weight: 300;
+                font-size: 20px;
+                text-decoration: none;
+            }
+            span,h3{
+                color: crimson;
+            }
+            h1{
+                font-size: 40px;
+                font-style: italic;
+                font-weight: 900;
+            }
+            h2{
+                font-size: 40px;
+                color: blue;
+            }
+            div{
+                width: 90%;
+                margin: auto;
+                text-align: center;
+            }
+            table{
+                margin: auto;
+                text-align: center;
+            }
+            dd,dt,ul{
+                text-align: left;
+                padding-left: 25px;
+            }
+            td{
+                width: 30%;
+                padding-left: 25px;
+                padding-right: 25px;
+                padding-bottom: 15px;
+                vertical-align: top;
+            }
+            nav {
+	            padding: 16px;
+	            margin-bottom: 4px;
+	            background-color: cyan;
+	            text-align: center;     
+            }
+            
+            .do{
+                height: 100px;
+	            width: 200px;
+                background-color: cyan;
+            }
+            .dont{
+                height: 100px;
+	            width: 200px;
+                background-color: crimson;
+            }
+            .project_image{
+                height: 300px;
+            }
+            .content_details{
+                height: auto;
+                width: 800px;
+                margin-bottom: 50px;
+            }
+            .nav-link {
+	            margin-right: 20px;
+	            margin-left: 20px;
+	            color: DodgerBlue;
+            }
+            .info_section{
+                border-left: 5px;
+                border-color: blue;
+            }
+            #profile {
+	            height: 300px;
+	            width: 300px;
+	            margin-top: 10px;
+	            margin-bottom: 10px;
+            }     
+        </style>
+        
+    </head>
+    <body>
+        <nav>
+            <a href="#personal_info" class="nav-link">Pesonal Information</a>
+            <a href="#work_experience" class="nav-link">Work Experience</a>
+            <a href="#my_interest" class="nav-link">My Interest</a>
+            <a href="#afraid_of" class="nav-link">What I'm afraid of!</a>
+            <a href="#more_about" class="nav-link">More About Me</a>
+        </nav>
+
+        <div id="personal_info">
+            <img src="image/my_picture.jpg" id="profile">
+            <h1 id="name">Rodney Estacion</h1>
+        </div>
+        <div class="content_details">
+            <h2>Personal Information</h2>
+            <ul>
+                <li>Graduate of Bachelor of Science in Computer Engineering</li>
+                <li>From Lian, Batangas but currently live at Noveleta, Cavite</li>                
+            </ul>  
+        </div> 
+               
+        <div class="content_details" id="work_experience">
+            <h2>Work Experience</h2>
+            <dl>
+                <dt>
+                    <h3><span>Yujin Optical Electronics (October 2012 ~ August 2015)</span></h3>
+                </dt>
+                <dd>
+                    <ul>
+                        <li>Techical Engineer - Handle machine troubleshooting and maintenace.</li>
+                        <li>Process Engineer - Conduct raw material sampling before deploy in production. 
+                            Conduct analysis of product defect occurence and implement necessary countermeasure.</li>
+                    </ul>
+                </dd> 
+                <dt>
+                    <h3><span>YAZAKI Philippine EDS Techno-Service Inc. (August 2015 ~ July 2024)</span></h3>
+                </dt>
+                <dd>
+                    <ul>
+                        <li>Senior Data Processor - Process information of automotive and update it system based given details in drawings and documents.
+                            Data extraction and modification in SQL server for special case due to limitation of other registration system. Create tools
+                            to improve document processing and checking.
+                        </li>
+                    </ul>
+                </dd> 
+            </dl>
+        </div>
+
+        <div id="my_interest">
+            <h2>My Interest</h2>
+            <table>
+                <td class="do">
+                    <h1>Do</h1>
+                    <ul>
+                        <li>Cycling</li>
+                        <li>Hiking</li>
+                        <li>Badmiton</li>
+                        <li>Table Tennis</li>
+                        <li>Puzzle and Board Game</li>
+                    </ul>
+                </td>
+                <td class="dont">
+                    <h1>Don't</h1>
+                    <ul>
+                        <li>Singing</li>
+                        <li>Dancing</li>
+                    </ul>
+                </td>
+            </table>
+        </div>        
+        
+        <div class="content_details" id="afraid_of">
+            <h2>What I'm afraid of!</h2>
+            <ul>
+                <li>Lack of confidence especially in front of crowd</li>
+            </ul>
+        </div>
+        <div id="more_about">
+            <h2>More About Me</h2>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Autocad Project</h3>
+                        <img src="image/autocad_layout.png" alt="Autocad Project" class="project_image">
+                    </td>
+                    <td>
+                        <h3>Revit Project</h3>
+                        <img src="image/revit_layout.png" alt="Revit Project" class="project_image">
+                    </td>
+                    <td>
+                        <h3>Mobile App Project</h3>
+                        <img src="image/inventory_app.JPG" alt="Inventory App" class="project_image">
+                        <img src="image/final_project.JPG" alt="Car Rental App" class="project_image">
+                    </td>
+                </tr>
+            </table>
+        </div>        
+        
+    <footer style="margin: 0; text-align: center; padding: 50px; background-color: rgba(0, 0, 0, 0.85); border-top: 2px solid #ccc;">
+        <p style="color: #ffffff;">Thank you for visiting our webpage!</p> <br>
+        <a href="index.html" style="color: #ffffff;"> << Go Back </a> <!-- Go back link with this-->
+    </footer>
+    </body>
+</html>
